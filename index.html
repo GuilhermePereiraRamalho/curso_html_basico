@@ -1,92 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body { 
+            background-image: url(
+                https://assets.nflxext.com/ffe/siteui/vlv3/25f808aa-cecb-4753-8541-9a79f40c18ae/web/IT-it-20251006-TRIFECTA-perspective_5c115fe8-4609-41c3-ba7b-db5ec153e569_large.jpg
+            );
+            background-size: cover;
+            background-position: top center;
+        }
+
+        #heading{
+            background: rgba(0, 0, 0, 0.8);
+        }
+        #heading div{
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+        #heading .h1{
+            padding: 15px 0;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        #heading a{
+            color: white;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>
-            <a href="#">Home</a>
-        </h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam, sapiente voluptatum repellendus velit odit recusandae vel quia sunt! Nesciunt aut doloribus alias laborum voluptates explicabo expedita, debitis nulla tempore.</p>
-        <div>Alinhar algo</div>
+    <header id="heading">
+        <div>
+            <h1 class="h1">
+                <a href="#">Netflix</a>
+            </h1>
+
+            <h2 class="h1">
+                <button>Entrar</button>
+            </h2>
+        </div>
     </header>
-
-    <aside>
-        <nav>
-            <ul>
-                <li><a href="#">Texto 1</a></li>
-                <li><a href="#">Texto 1</a></li>
-                <li><a href="#">Texto 1</a></li>
-                <li><a href="#">Texto 1</a></li>
-            </ul>
-        </nav>
-    </aside>
-
-    <section>
-        <header>
-            <h2>Roupas Femininas</h2>
-        </header>
-
-        <article>
-            <h3>Heading 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, ex esse, quis ut voluptatibus ducimus aspernatur facere eaque deleniti, dolores nostrum minima! Natus consectetur provident nesciunt beatae ad! Quidem, sit?</p>
-        </article>
-        <article>
-            <h3>Heading 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, ex esse, quis ut voluptatibus ducimus aspernatur facere eaque deleniti, dolores nostrum minima! Natus consectetur provident nesciunt beatae ad! Quidem, sit?</p>
-        </article>
-        <article>
-            <h3>Heading 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, ex esse, quis ut voluptatibus ducimus aspernatur facere eaque deleniti, dolores nostrum minima! Natus consectetur provident nesciunt beatae ad! Quidem, sit?</p>
-        </article>
-    </section>
-
-        <section>
-        <header>
-            <h2>Roupas Masculinas</h2>
-        </header>
-
-        <article>
-            <h3>Heading 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, ex esse, quis ut voluptatibus ducimus aspernatur facere eaque deleniti, dolores nostrum minima! Natus consectetur provident nesciunt beatae ad! Quidem, sit?</p>
-        </article>
-        <article>
-            <h3>Heading 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, ex esse, quis ut voluptatibus ducimus aspernatur facere eaque deleniti, dolores nostrum minima! Natus consectetur provident nesciunt beatae ad! Quidem, sit?</p>
-        </article>
-        <article>
-            <h3>Heading 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, ex esse, quis ut voluptatibus ducimus aspernatur facere eaque deleniti, dolores nostrum minima! Natus consectetur provident nesciunt beatae ad! Quidem, sit?</p>
-        </article>
-    </section>
-
-    <article>
-        <h2>Heading</h2>
-        <section>
-            <header>
-                <h2>Heading</h2>
-            </header>
-        </section>
-    </article>
-
-    <div>
-        <section>
-            <header>
-                <h3>Heading</h3>
-            </header>
-            <div>Oi</div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro rem facere officiis quibusdam distinctio rerum at placeat laborum cupiditate corrupti quis illo mollitia consequatur ad dolores, suscipit aliquam culpa dolor molestiae neque veniam harum libero. Consequuntur, doloremque, soluta quisquam vitae et, voluptatum reiciendis distinctio asperiores corporis nam inventore amet! Architecto?</p>
-        </section>
-        <footer>
-            Rodapé
-        </footer>
-    </div>
-
-    <footer>
-        Meu endereco
-    </footer>
 </body>
 </html>
