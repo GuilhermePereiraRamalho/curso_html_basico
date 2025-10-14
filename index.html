@@ -6,51 +6,70 @@
     <title>Document</title>
 
     <style>
-        * {
+        *{
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
-        .section-one{
-            background-color: deeppink;
-            background-image: url(
-                https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Altja_j%C3%B5gi_Lahemaal.jpg/330px-Altja_j%C3%B5gi_Lahemaal.jpg
-            );
-            color: #fff;
-
-            width: 300px;
-            height: 150px;
-            background-size: cover;
-            background-position: center center;
-            /* border: 1px solid red; */
-            border-style: solid;
-            border-width: 10px;
-            border-top-color: yellow;
-            border-bottom-color: firebrick;
-            border-right-color: green;
-            border-left-color: blue;
-            /* padding: 150px 0 0 0; top right bottom left */
-            padding: 15px 0;  /* top/bottom right/left */
-            padding: 10px;
-            /* margin: 150px 0 0 0;  top right bottom left */
-            margin: 20px;
+        nav {
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
         }
-        .section-two{
-            background: cyan;
 
-            width: 200px;
-            height: 50px;
-            background-size: cover;
-            background-position: center center;
-            border: 5px solid black;
-            padding: 15px;
-            margin: 20px;
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 10px 20px;
+            display: block;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin-left: 10px;
         }
     </style>
 </head>
 <body>
-    <section class="section-one">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</section>
-    <section class="section-two">2</section>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+        </ul>
+    </nav>
+    <ul>
+        <li>item 2</li>
+        <li>item 1</li>
+        <li>item 3</li>
+    </ul>
+
+    <!-- <ol type="A"> -->
+    <!-- <ol type="a"> -->
+    <!-- <ol type="i"> -->
+    <!-- <ol type="I"> -->
+    <ol type="1" start="20">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+
+    <dl>
+        <dt>Café</dt>
+        <dd>Bebida quente</dd>
+        <dt>Café</dt>
+        <dd>Bebida quente</dd>
+        <dt>Café</dt>
+        <dd>Bebida quente</dd>
+        <dt>Café</dt>
+        <dd>Bebida quente</dd>
+    </dl>
 </body>
 </html>
