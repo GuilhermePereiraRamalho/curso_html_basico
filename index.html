@@ -6,70 +6,79 @@
     <title>Document</title>
 
     <style>
-        *{
-            margin: 0;
-            padding: 0;
+        body{
+            font-family: sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 800px;
+        }
+        table td, table th {
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: left;
+        }
+        table caption{
+            caption-side: bottom;
+            text-align: right;
+            font-style: italic;
+            font-size: 14px;
+            margin: 5px 0;
         }
 
-        nav {
-            background: rgba(0, 0, 0, 0.5);
-            display: flex;
-            align-items: center;
+        tfoot td, table th {
+            background: #ddd;
         }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            padding: 10px 20px;
-            display: block;
-            text-transform: uppercase;
+        tfoot td {
+            font-style: italic;
         }
-
-        nav a:hover {
-            background: rgba(0, 0, 0, 0.3);
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            margin-left: 10px;
+        
+        .responsive-table{
+            overflow-x: auto;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Products</a></li>
-        </ul>
-    </nav>
-    <ul>
-        <li>item 2</li>
-        <li>item 1</li>
-        <li>item 3</li>
-    </ul>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div class="responsive-table">
+        <table>
+            <caption>Uma descrição para a tabela</caption>
+            <thead>
+                <tr>
+                    <th>Titulo 1</th>
+                    <th>Titulo 2</th>
+                    <th>Titulo 3</th>
+                </tr>
+            </thead>
 
-    <!-- <ol type="A"> -->
-    <!-- <ol type="a"> -->
-    <!-- <ol type="i"> -->
-    <!-- <ol type="I"> -->
-    <ol type="1" start="20">
-        <li>item 1</li>
-        <li>item 2</li>
-        <li>item 3</li>
-    </ol>
-
-    <dl>
-        <dt>Café</dt>
-        <dd>Bebida quente</dd>
-        <dt>Café</dt>
-        <dd>Bebida quente</dd>
-        <dt>Café</dt>
-        <dd>Bebida quente</dd>
-        <dt>Café</dt>
-        <dd>Bebida quente</dd>
-    </dl>
+            <tbody>
+                <tr>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus amet debitis explicabo eum nihil accusamus aut? Quia ipsum adipisci debitis quidem sunt ex aspernatur molestias, cumque architecto obcaecati nostrum. Nam!</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td colspan="2">AQUI</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" rowspan="2"></td>
+                    <td>TOTAL</td>
+                </tr>
+                <tr>
+                    <td>R$ 555</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 </body>
 </html>
