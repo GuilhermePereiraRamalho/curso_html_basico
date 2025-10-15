@@ -9,76 +9,20 @@
         body{
             font-family: sans-serif;
         }
-        table{
-            border-collapse: collapse;
-            width: 800px;
-        }
-        table td, table th {
-            border: 1px solid #ccc;
-            padding: 5px;
-            text-align: left;
-        }
-        table caption{
-            caption-side: bottom;
-            text-align: right;
-            font-style: italic;
-            font-size: 14px;
-            margin: 5px 0;
-        }
-
-        tfoot td, table th {
-            background: #ddd;
-        }
-
-        tfoot td {
-            font-style: italic;
-        }
-        
-        .responsive-table{
-            overflow-x: auto;
-            width: 100%;
-        }
     </style>
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet.</p>
-    <div class="responsive-table">
-        <table>
-            <caption>Uma descrição para a tabela</caption>
-            <thead>
-                <tr>
-                    <th>Titulo 1</th>
-                    <th>Titulo 2</th>
-                    <th>Titulo 3</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus amet debitis explicabo eum nihil accusamus aut? Quia ipsum adipisci debitis quidem sunt ex aspernatur molestias, cumque architecto obcaecati nostrum. Nam!</td>
-                    <td>Corpo 2</td>
-                    <td>Corpo 3</td>
-                </tr>
-                <tr>
-                    <td colspan="2">AQUI</td>
-                    <td>Corpo 3</td>
-                </tr>
-                <tr>
-                    <td>Corpo 1</td>
-                    <td>Corpo 2</td>
-                    <td>Corpo 3</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="2" rowspan="2"></td>
-                    <td>TOTAL</td>
-                </tr>
-                <tr>
-                    <td>R$ 555</td>
-                </tr>
-            </tfoot>
-        </table>
-    </div>
+    <section>
+        <form action="#" method="get" target="_blank" autocomplete="off">
+            <h1>Cabeça</h1>
+            <p>O formulário</p>
+            <fieldset>
+                <legend>Descrição</legend>
+                <p>
+                    <input type="text">
+                </p>
+            </fieldset>
+        </form>
+    </section>
 </body>
 </html>
