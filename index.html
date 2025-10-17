@@ -84,6 +84,56 @@
         </p>
 
         <p>
+            <label for="password">Sua senha:</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha">
+        </p>
+
+        <p>
+            <label for="range">range:</label>
+            <input type="range" id="range" name="range" step="2" list="tickmarkers">
+            <datalist id="tickmarkers">
+                <option value="0" label="0%"></option>
+                <option value="10"></option>
+                <option value="20"></option>
+                <option value="30"></option>
+                <option value="40"></option>
+                <option value="50" label="50%"></option>
+                <option value="60"></option>
+                <option value="70"></option>
+                <option value="80"></option>
+                <option value="90"></option>
+                <option value="100" label="100%"></option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="url">URL:</label>
+            <input type="url" id="url" name="url" placeholder="sua url">
+        </p>
+
+        <p>
+            <label for="search">Search:</label>
+            <input type="search" id="search" name="search" placeholder="o que deseja?">
+        </p>
+
+        <p>
+            <label for="select">Selecione alguma opcao:</label>
+            <select id="select">
+                <optgroup label="Test">
+                    <option value="valor1">Label1</option>
+                    <option value="valor2" disabled>Label2</option>
+                    <option value="valor3" selected>Label3</option>
+                    <option value="valor4">Label4</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="textarea">textarea:</label>
+            <textarea name="textarea" id="textarea" rows="3" cols="9"></textarea>
+        </p>
+
+        <p>
             <button type="reset">Resetar</button>
             <button type="submit">Enviar</button>
         </p>
