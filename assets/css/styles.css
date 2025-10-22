@@ -19,7 +19,15 @@
     color: red;
 } */
 
-[meu-atributo="A"] {
+/* [meu-atributo^="qualquercoisa"] {
+    color: red;
+} */
+
+/* [meu-atributo$="c"] {
+    color: red;
+} */
+
+[meu-atributo*="c"] {
     color: red;
 }
 
