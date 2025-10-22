@@ -1,37 +1,63 @@
-* {
-    margin: 0;
-    padding: 0;
+/* .heading {
+    transition: all 1s ease-in-out;
 }
 
-/* .pai h1+p{
-    color: red;
-} */
-
-/* .pai p+h1{
-    color: yellow;
-} */
-
-/* .pai h1~p{
-    color: red;
-} */
-
-/* .pai .um~.dois{
-    color: red;
-} */
-
-/* [meu-atributo^="qualquercoisa"] {
-    color: red;
-} */
-
-/* [meu-atributo$="c"] {
-    color: red;
-} */
-
-[meu-atributo*="c"] {
-    color: red;
+.heading:hover {
+    background: red;
 }
 
-[checked] {
+a {
+    color: darkorange;
+}
+
+a:link {
+    color: deeppink;
+}
+
+a:visited {
+    color: firebrick;
+}
+
+a:hover {
+    background: darkblue;
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    background: darkslategray;
+    color: white;
+    text-decoration: none;
+} */
+
+/* input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+
+input:disabled{
+    background: rebeccapurple;
+    cursor: not-allowed;
+} */
+
+/* input:checked {
     width: 50px;
     height: 50px;
+} */
+
+/* input:checked + p {
+    background: red;
+} */
+
+.pai .lista li:first-child{
+    background: red;
+}
+
+.pai .lista li:last-child{
+    background: red;
+}
+
+input:required{
+    background: red;
 }
