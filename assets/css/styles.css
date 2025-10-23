@@ -46,9 +46,9 @@ input:disabled{
     height: 50px;
 } */
 
-/* input:checked + p {
+input:checked + p {
     background: red;
-} */
+}
 
 .pai .lista li:first-child{
     background: red;
@@ -60,4 +60,12 @@ input:disabled{
 
 input:required{
     background: red;
+}
+
+p:not(.meio) {
+    color: blue;
+}
+
+input:not(checked) + p {
+    background: yellow;
 }
