@@ -1,15 +1,20 @@
-p:nth-child(odd){
-    background-color: rebeccapurple;
+/* ul li::after{
+    content: ' - ';
+    background: red;
+    color: white;
+    display: block;
+} */
+
+/* ul li::before{
+    content: ' - ';
+    background: red;
+    color: white;
+    display: block;
+} */
+p {
+    font-size: 24px;
 }
 
-p:nth-child(even){
-    background-color: darkturquoise;
-}
-
-p:nth-child(3n){
-    background-color: darkolivegreen;
-}
-
-p:nth-child(3n + 10){
-    background-color: darkred;
+.form-field::placeholder{
+    color: red;
 }
