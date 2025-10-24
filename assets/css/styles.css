@@ -1,20 +1,10 @@
-/*
-especificidade
-empate
-style
-!important ****
-*/
-
-body#b.bclass p#p.p{
-    background: purple !important;
-}
-#p {
-    background: red;
+#texto {
+    font-family: sans-serif;
+    color: red;
+    font-size: 70px;
 }
 
-#p.p {
-    background: yellow;
-}
-p{
-    background: blue !important;
+p {
+    font-size: initial;
+    color: inherit;
 }
