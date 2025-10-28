@@ -1,16 +1,59 @@
-p {
-    /* color: red;
-    background: yellow; */
-    font-size: 20px;
-    /* font-style: italic;
-    font-weight: bold;
-    direction: ltr;
-    letter-spacing: 1px;
-    word-spacing: 10px;
-    line-height: 25px; */
-    text-align: left;
-    /* text-decoration: underline line-through; */
-    text-indent: 50px;
-    text-shadow: -1px -1px 1px red;
-    text-transform: capitalize;
+* {
+    margin: 0;
+}
+
+.pai{
+    height: 300vh;
+}
+
+.filha1, .filha2, .filha3 {
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 0, 0, 1);
+    margin: 10px;
+    position: static;
+}
+
+.filha2 {
+    background: greenyellow;
+    position: fixed;
+    top: 30%;
+    right: 0;
+    z-index: 1;
+}
+
+.filha1 {
+    position: absolute;
+    top: 50%;
+    margin-top: -150px;
+    left: 50%;
+    margin-left: -150px;
+    z-index: 2;
+}
+
+.filha3{
+    background: blue;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.outra {
+    font-size: 50px;
+    background: white;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+ul{
+    height: 100px;
+    overflow-y: auto;
+}
+
+
+ul li.sticky{
+    position: sticky;
+    background: grey;
+    top: 0;
 }
